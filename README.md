@@ -18,5 +18,11 @@ Currently studying Linux, networking, and Docker.
 - Docker & docker-compose
 - CI/CD pipelines
 
+## Currently learning
+- Linux administration (files, permissions, processes, users)
+- Networking fundamentals (TCP/IP, DNS, HTTP/HTTPS)
+- Bash scripting basics
+- Docker (coming next)
+
 ## Goal
-Junior DevOps Engineer position in 2025-2026
+Junior DevOps Engineer position in 2026
