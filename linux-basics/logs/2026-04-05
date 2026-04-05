@@ -1,0 +1,32 @@
+systemd - main process, starts first when system boots. 
+All other processes are its children.
+
+active - service is running now. enabled - service starts 
+automatically after reboot. These states are independent.
+
+After changing config, always restart the service 
+to apply changes.
+
+ps aux shows all running processes with PID, CPU and memory usage.
+
+nginx has a master process running as root and worker processes 
+running as www-data. Worker processes have minimal rights — 
+if a hacker breaks nginx, they get only www-data rights, not root. 
+This is the principle of least privilege.
+
+lo - loopback interface, always points to itself. 
+IP is always 127.0.0.1, used when services on the same 
+machine talk to each other.
+
+/24 - subnet mask, means 256 addresses in the network. 
+The higher the number after / the fewer addresses.
+
+TTL - Time To Live. Each router decreases it by 1. 
+When it reaches 0 the packet is destroyed. 
+Prevents packets from looping forever.
+TTL ~64 = Linux, ~128 = Windows, ~255 = network hardware.
+
+DNS - translates domain names to IP addresses.
+Cache makes responses instant, reduces server load,
+makes DDoS harder and keeps working even when 
+the main server is down.
