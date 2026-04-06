@@ -1,0 +1,10 @@
+ufw - firewall for controlling connections to the server
+
+Before enabling - always allow SSH first
+Otherwise you will block yourself and lose access
+
+Default: deny incoming - nobody can connect without a rule
+Allow outgoing - server can freely connect to the internet
+
+Added rules: 22 SSH, 80 HTTP, 443 HTTPS. Everything else is blocked
+
