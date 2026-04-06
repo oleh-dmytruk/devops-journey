@@ -8,3 +8,17 @@ Allow outgoing - server can freely connect to the internet
 
 Added rules: 22 SSH, 80 HTTP, 443 HTTPS. Everything else is blocked
 
+Bash scripts automate tasks on the server. 
+Instead of typing commands manually - run one file.
+
+Wrote a backup script that archives a folder, saves it 
+with a date in the name, deletes old backups after 7 days 
+and writes a log.
+
+Cron - task scheduler. Runs commands automatically on schedule.
+
+Format: minute hour day_of_month month day_of_week
+
+0 2 * * * - every night at 2:00
+0 2 1 * * - first day of every month
+0 18 * * 5 - every Friday at 18:00
