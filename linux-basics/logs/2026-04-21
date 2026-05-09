@@ -1,0 +1,44 @@
+Git & GitHub Deep Dive
+
+Git Graphical Tools
+GUI clients let you see commit tree, branches, and diffs visually.
+Useful for understanding history when CLI gets confusing.
+Tried gitk and git log --graph --oneline --all for terminal visualization.
+git log --graph shows ASCII commit tree directly in console.
+
+Tags
+Tags mark specific commits, usually for releases (v1.0, v2.1).
+Two types:
+- Lightweight tag - just a pointer to a commit
+- Annotated tag - has author, date, message, can be signed
+git tag v1.0 - lightweight
+git tag -a v1.0 -m "Release version 1.0" - annotated
+git push origin --tags - push tags to remote (not pushed by default)
+
+Remotes
+Remote - link to a repository on another server (usually GitHub).
+git remote -v - show all remotes
+git remote add origin <url> - add new remote
+origin - default name for main remote
+upstream - usually the original repo when you forked
+
+Stash
+Stash saves uncommitted changes temporarily without committing.
+Useful when you need to switch branches but work is not finished.
+git stash - save current changes
+git stash list - see all stashes
+git stash pop - apply last stash and remove it
+git stash apply - apply but keep in stash list
+
+The Phoenix Project
+Started reading. The book shows how IT operations work in real companies
+through a story about a manager who has to save a failing project.
+Key idea: DevOps is not just tools, it's a way to organize work
+between development and operations to deliver value faster.
+The Three Ways: flow, feedback, continuous learning.
+
+Tasks done this week
+1. Configured tags on devops-journey repo
+2. Practiced stash on test branch
+3. Set up second remote for backup
+4. Read first 5 chapters of The Phoenix Project
